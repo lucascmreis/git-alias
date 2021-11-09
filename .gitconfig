@@ -1,9 +1,11 @@
 [user]
-	email = your@mail.com
-	name = user.name
+  # not good to force this globally, you should use the right name/email in each context
+  #email = name@mail.com
+  #name = user name
 [core]
 	editor = code --wait
 [alias]
 	s = !git status -s
-	c = !git add --all && git commit -m
 	l = !git log --pretty=format:'%C(blue)%h %C(red)%d%C(white)%s - %C(cyan)%cn, %C(green)%cr' 
+	c = !git add --all && git commit -m
+	cam = !git commit --amend
